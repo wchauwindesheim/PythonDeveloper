@@ -12,5 +12,5 @@ greeting = f"Hello, {user_name}!"
 print(greeting)
 
 # format specification is also available:
-pi_statement = f"pi is {math.pi:.4f}"
+pi_statement = f"pi is {math.pi:.2f}"
 print(pi_statement)
