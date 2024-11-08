@@ -6,7 +6,10 @@ from functions import main
 # print (sys.path)
 main()
 
+
 vandaag = date.today()
 
-
 print(vandaag)
+
+
+
