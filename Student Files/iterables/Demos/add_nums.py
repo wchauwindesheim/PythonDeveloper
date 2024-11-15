@@ -1,4 +1,6 @@
 def add_nums(num, *nums):
+    print(type(nums))
+    print()
     total = sum(nums, num)
     print(f"The sum of {nums} and {num} is {total}.")
 
