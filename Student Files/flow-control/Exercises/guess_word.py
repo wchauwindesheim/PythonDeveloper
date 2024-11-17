@@ -24,11 +24,13 @@ def check(word, guesses):
     #   'The word has 2 "A"s.' (where 2 is the number of matches)
     #   'The word has one "A".'
     #   'Sorry. The word has no "A"s.'
-
+    if last_guess == word:
+        status = 'guessed'
     return status
 
 def main():
     word = get_word() # The random word
+    print('pssst, het te raden woord is',word)
     n = len(word) # The number of letters in the random word
     guesses = [] # The list of guesses made so far
     guessed = False
@@ -37,6 +39,15 @@ def main():
     while not guessed:
         guess = input('Guess a letter or a {}-letter word: '.format(n))
         guess = guess.upper()
+        print(guess)
+        guesses.append(guess)
+        print(guesses)
+        status = check(word, guesses)
+        if status == 'guessed':
+            guessed = True
+
+        if guessed == True:
+            break
         # Write an if condition to complete this loop.
         # You must set guessed to True if the word is guessed.
         # Things to be looking for:
