@@ -1,1 +1,3 @@
 sheets
+__pycache__/
+*.pyc
