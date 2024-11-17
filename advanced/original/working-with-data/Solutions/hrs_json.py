@@ -1,6 +1,6 @@
 import requests
 
-data="https://static.webucator.com/media/public/documents/hrleaders.json" 
+data="https://oraculo.nl/itmg/python/hrleaders.json" 
 
 r = requests.get(data)
 records = r.json()

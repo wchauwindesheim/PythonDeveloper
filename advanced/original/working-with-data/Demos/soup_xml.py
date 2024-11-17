@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-url = 'https://static.webucator.com/media/public/documents/hrleaders.xml'
+url = 'https://oraculo.nl/itmg/python/hrleaders.xml'
 r = requests.get(url)
 content = r.text
 

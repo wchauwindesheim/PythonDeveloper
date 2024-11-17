@@ -9,7 +9,7 @@ YEAR = 3
 BIRTH_DAY = 4
 
 def get_content():
-    url = 'https://static.webucator.com/media/public/documents/hrleaders.html'
+    url = 'https://oraculo.nl/itmg/python/hrleaders.html'
     r = requests.get(url)
     return r.text
 

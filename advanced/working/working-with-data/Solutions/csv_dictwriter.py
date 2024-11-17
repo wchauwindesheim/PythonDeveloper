@@ -2,10 +2,10 @@ import mysql.connector
 import csv
 
 connection = mysql.connector.connect(
-    host='lahman.csw1rmup8ri6.us-east-1.rds.amazonaws.com',
-    user='python',
-    passwd='python',
-    db='lahmansbaseballdb'
+    host='oraculo.nl',
+    user='u10962p7733_python',
+    passwd='zyZBOD8mCFGlqyAd',
+    db='u10962p7733_lahmansbaseballdb'
 )
 
 query = """SELECT year(debut) AS year, avg(weight) AS weight
