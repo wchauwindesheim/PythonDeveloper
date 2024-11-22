@@ -1,5 +1,5 @@
 import sqlite3
-connection = sqlite3.connect(':memory:')
+connection = sqlite3.connect('../data/lahmansbaseballdb.sqlite')
 connection.row_factory = sqlite3.Row
 
 cursor = connection.cursor()
@@ -25,6 +25,8 @@ with open('../data/states.txt') as f:
         data.append(tpl_state_data)
 
 cursor.executemany(insert, data)
+
+connection.commit()
 
 select = """SELECT state,
             CAST((pop2020*1.0/pop2000) * pop2020 AS INTEGER) AS pop2040
