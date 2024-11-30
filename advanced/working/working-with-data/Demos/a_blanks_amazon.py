@@ -21,14 +21,25 @@ def main():
         f.write(content)
     soup = BeautifulSoup(content, 'lxml')
 
-    external_links = soup.find_all('span', class_='a-offscreen')
+    # external_links = soup.find_all('span', class_='a-offscreen')
+    # external_links = soup.find_all('span', class_='a-price-whole')
+    external_links = []
+    div = soup.find('div', id='corePriceDisplay_desktop_feature_div')
+    # print(div)
 
-    found = False
-    for i, link in enumerate(external_links, 1):
-        found = True
-        print(f'{i}. {link}')
+    soup = BeautifulSoup(str(div), 'lxml')
+    price = soup.find('span', class_='a-price-whole')
+    print(price.text)
 
-    if not found:
-        print('None found.')
+    tags = soup.select(".a-price-whole, .a-price-fraction")
+    
+    print(tags[0].text, tags[1].text, sep='')
+    # found = False
+    # for i, link in enumerate(external_links, 1):
+    #     found = True
+    #     print(f'{i}. {link}')
+
+    # if not found:
+    #     print('None found.')
 
 main()

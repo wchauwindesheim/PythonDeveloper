@@ -10,6 +10,9 @@ class TestDieFunctions(unittest.TestCase):
     def test_init(self):
         self.assertEqual(self.die1.sides, 6)
         self.assertEqual(self.die2.sides, 8)
+
+    def test_dummy(self):
+        self.assertEqual(1, 0)    
         
 if __name__ == '__main__':
     unittest.main()

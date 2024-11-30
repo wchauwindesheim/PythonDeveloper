@@ -1,5 +1,5 @@
 import random
-from timeit import timeit
+from timeit import timeit, repeat
 
 def string_nums1():
     numbers = str(random.randint(1, 100))

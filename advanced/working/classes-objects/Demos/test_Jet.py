@@ -1,7 +1,7 @@
 # Test Jet class:
 
-from Plane import Plane
-from Jet import Jet
+from Plane1 import Plane
+from Jet1 import Jet
 
 p1 = Plane()
 p2 = Plane()

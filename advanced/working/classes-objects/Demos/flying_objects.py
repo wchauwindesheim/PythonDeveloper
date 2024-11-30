@@ -1,4 +1,4 @@
-from Plane import Plane3
+from Plane3 import Plane
 from Bird import Bird
 from FlyingObject import FlyingObject
 

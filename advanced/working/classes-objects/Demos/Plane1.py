@@ -3,6 +3,7 @@ class Plane:
     def __init__(self):
         self._in_air = False
         self.planes.append(self)
+        print('Plane created')
     
     def take_off(self):
         self._in_air = True

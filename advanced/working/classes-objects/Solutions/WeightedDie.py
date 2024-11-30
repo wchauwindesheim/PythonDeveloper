@@ -5,7 +5,7 @@ from Die2 import Die
 class WeightedDie(Die):
     "A weighted die"
     def __init__(self, weights, sides=6):
-        """Creates a new weighted die
+        """Creates a new weighted die   
         
         Keyword arguments:
         sides (int) -- number of die sides.

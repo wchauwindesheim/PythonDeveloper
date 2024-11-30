@@ -19,3 +19,5 @@ td2 = end_time - start_time
 
 print(f"""Time Delta 1: {td1}
 Time Delta 2: {td2}""")
+
+print(time.perf_counter())
