@@ -5,3 +5,16 @@
 - bash console:
 
 ![alt text](img/image.png)
+- ssh key:
+  - create ssh keys met het commando
+    ```
+    ssh-keygen  
+    ```
+  - [voeg](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) je ssh key toe aan Github bij Settings -> SSH and GPH keys
+    ![alt text](img/sshbutton.png)
+  - [test](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection) eventueel je SSH connectie naar Github met:
+    ```
+    ssh -T git@github.com
+    ```
+   
+- nu kun je met commando's ```git clone``` en ```git pull``` je repository clonen en updaten vanuit Github
