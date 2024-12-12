@@ -22,8 +22,8 @@
 ## PythonAnywhere
 - log in and open web tab under 'All Web apps'
 - add a new webapp
-- verzin een naam
 - ga naar de bash console
 - clone jouw repo naar pythonanywhere
-- wijzig ALLOWED_HOSTS
-- 
+- wijzig ALLOWED_HOSTS (vergeet de quotes niet)
+- reload de web app
+- je website draait nu live op het internet!
