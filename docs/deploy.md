@@ -23,7 +23,7 @@
 - log in and open web tab under 'All Web apps'
 - add a new webapp
 - ga naar de bash console
-- clone jouw repo naar pythonanywhere
+- clone jouw repo naar pythonanywhere (via ssh)
 - wijzig ALLOWED_HOSTS (vergeet de quotes niet)
 - reload de web app
 - je website draait nu live op het internet!
