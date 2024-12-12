@@ -18,3 +18,12 @@
     ```
    
 - nu kun je met commando's ```git clone``` en ```git pull``` je repository clonen en updaten vanuit Github
+
+## PythonAnywhere
+- log in and open web tab under 'All Web apps'
+- add a new webapp
+- verzin een naam
+- ga naar de bash console
+- clone jouw repo naar pythonanywhere
+- wijzig ALLOWED_HOSTS
+- 
