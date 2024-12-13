@@ -5,4 +5,4 @@ The SSH protocol uses encryption to secure the connection between a client and a
 
 https://www.ssh.com/academy/ssh
 
-![alt text](image.png)
+![alt text](img/ssh.png)
